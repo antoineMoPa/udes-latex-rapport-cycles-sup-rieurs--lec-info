@@ -1,0 +1,89 @@
+\documentclass[livre]{udes-genie-simple}
+
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{placeins}
+\usepackage{pdfpages}
+\usepackage{appendix}
+\usepackage{makecell}
+\usepackage{setspace}
+
+\title{Rapport d'APP1}
+
+\begin{document}
+
+\input{title.tex}
+
+\pagenumbering{roman}
+
+{
+    \linespread{0,8}
+    \tableofcontents
+}
+
+\listoffigures
+\listoftables
+
+\clearpage
+
+\pagenumbering{arabic}
+
+\section{Introduction}
+
+\section{Exemples}
+
+\begin{table}[h!]
+    \begin{center}
+        \caption{Le tableau}
+        \label{lelabeldutableau}
+        \begin{tabular}{|p{3cm}|c|c|}
+            \hline
+            texte & \textbf{x} & \textbf{y} \\ 
+            \hline
+            \hline
+            bla bla & 0,0 & 1,1\\
+            bla bla & 1,0 & 1,5\\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\begin{figure}[h!]
+    \centering
+    %\includegraphics[width=250pt]{test.jpg}
+    \caption{Figure}
+    \label{lelabeldelafigure}
+\end{figure}
+
+\begin{equation}
+    E = m c ^ 2
+\end{equation}
+
+\begin{equation}
+    0,99999 \approx 1
+\end{equation}
+
+\section{A}
+\section{Contrat d'équipe}
+
+
+\section{Conclusion}
+
+\newpage
+\section{Références}
+\bibliographystyle{IEEEtran-fr}
+
+% \bibliography{Bibliographie}
+
+%========================
+% 
+% \newpage
+% \section*{Annexe}
+% \begin{appendices}
+% \section{Contrat}
+% \label{annexe_contrat} % % pour y faire référence: \ref{annexe_contrat}.
+% \includepdf[fitpaper=true, pages=-]{contrat.pdf}
+% \end{appendices}
+
+\end{document}
+
